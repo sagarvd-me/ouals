@@ -1,0 +1,46 @@
+body{
+    background: url('../images/bg_3.png');
+    background-size: cover;
+}
+nav li{
+    font-size: 1.3em;
+}
+.title-container{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: #fff;
+    transform: translate(-50%,-50%);
+}
+.subtitle{
+    width: 100%;
+}
+.subtitle-text{
+    font-size: 1.5em;
+    padding-left:5%;
+    letter-spacing: 20px;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    right: 0px;
+    display: inline-block;
+    position: absolute;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.subtitle-text.hidden{
+    width: 0%;
+    right: 100%;
+    opacity: 0;
+}
+.title{
+    font-size: 8em;
+}
+@media (max-width: 720px){
+    .title{
+        font-size: 4.5em;
+    }
+    .subtitle-text{
+        letter-spacing: normal;
+    }
+}
